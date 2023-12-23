@@ -3,16 +3,17 @@ import winston from "winston"
 const logger = winston.createLogger({
    level: "info",
    format: winston.format.combine(
-      // winston.format.colorize({ all: true }),
+      winston.format.colorize({ all: true }),
       winston.format.timestamp({
          format: "YYYY-MM-DD HH:mm:ss"
       }),
+      winston.format.json(),
       winston.format.align(),
-      winston.format.printf((info) => {
-         console.log(info.message)
-         console.log(typeof info.message)
-         return `[${info.timestamp}] ${info.level}: ${typeof info.message === "object" ? JSON.stringify(info.message, null, 2) : info.message}`
-      })
+      // winston.format.printf((info) => {
+      //    console.log(info.message)
+      //    console.log(typeof info.message)
+      //    return `[${info.timestamp}] ${info.level}: ${typeof info.message === "object" ? JSON.stringify(info.message, null, 2) : info.message}`
+      // })
    ),
    transports: [
       new winston.transports.Console(),

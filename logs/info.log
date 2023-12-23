@@ -19,3 +19,15 @@
 {"level":"info","message":"\tHello world!","timestamp":"2023-12-23 18:39:24"}
 {"level":"error","message":"\tHello world!","timestamp":"2023-12-23 18:39:24"}
 {"level":"info","message":"\t[object Object]","timestamp":"2023-12-23 18:39:24"}
+{"level":"info","message":"\tHello world!","timestamp":"2023-12-23 18:42:32"}
+{"level":"error","message":"\tHello world!","timestamp":"2023-12-23 18:42:32"}
+{"level":"info","message":"\t[object Object]","timestamp":"2023-12-23 18:42:32"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\t\u001b[32mHello world!\u001b[39m","timestamp":"2023-12-23 18:43:04"}
+{"level":"\u001b[31merror\u001b[39m","message":"\t\u001b[31mHello world!\u001b[39m","timestamp":"2023-12-23 18:43:04"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\t\u001b[32m{ test: 'Hello world!' }\u001b[39m","timestamp":"2023-12-23 18:43:04"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\t\u001b[32mHello world!\u001b[39m","timestamp":"2023-12-23 18:43:11"}
+{"level":"\u001b[31merror\u001b[39m","message":"\t\u001b[31mHello world!\u001b[39m","timestamp":"2023-12-23 18:43:11"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\t\u001b[32m{ test: 'Hello world!' }\u001b[39m","timestamp":"2023-12-23 18:43:11"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\t\u001b[32mHello world!\u001b[39m","timestamp":"2023-12-23 18:44:54"}
+{"level":"\u001b[31merror\u001b[39m","message":"\t\u001b[31mHello world!\u001b[39m","timestamp":"2023-12-23 18:44:54"}
+{"level":"\u001b[32minfo\u001b[39m","message":"\t\u001b[32m{ test: 'Hello world!' }\u001b[39m","timestamp":"2023-12-23 18:44:54"}
