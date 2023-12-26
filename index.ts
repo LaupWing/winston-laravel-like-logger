@@ -2,7 +2,7 @@ import winston from "winston"
 import "winston-daily-rotate-file"
 
 const fileRotateTransport = new winston.transports.DailyRotateFile({
-   filename: "combined-%DATE%.log",
+   filename: "./logs/daily/combined-%DATE%.log",
    datePattern: "YYYY-MM-DD",
    maxFiles: "14d"
 })
@@ -10,7 +10,7 @@ const fileRotateTransport = new winston.transports.DailyRotateFile({
 const logger = winston.createLogger({
    level: "info",
    format: winston.format.combine(
-      winston.format.colorize({ all: true }),
+      
       winston.format.timestamp({
          format: "YYYY-MM-DD HH:mm:ss"
       }),
@@ -24,11 +24,22 @@ const logger = winston.createLogger({
    ),
    transports: [
       fileRotateTransport,
-      new winston.transports.Console(),
+      new winston.transports.Console({
+         format: winston.format.combine(
+            winston.format.colorize({ all: true }),
+            winston.format.simple(),
+            winston.format.timestamp({
+               format: "YYYY-MM-DD HH:mm:ss"
+            })
+         )
+      }),
       new winston.transports.File({
          filename: "logs/info.log",
          format: winston.format.combine(
-            winston.format.json()
+            winston.format.json(),
+            winston.format.prettyPrint({
+               depth: 2
+            })
          )
       })
    ]
@@ -36,9 +47,7 @@ const logger = winston.createLogger({
 
 logger.info("Hello world!")
 logger.error("Hello world!")
-console.log(typeof {
-   test: "Hello world!"
-})
-logger.info({
+
+logger.info("test", {
    test: "Hello world!"
 })

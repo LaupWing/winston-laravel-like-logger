@@ -1,0 +1,15 @@
+{"level":"info","message":"Hello world!","timestamp":"2023-12-26 16:20:43"}
+{"level":"error","message":"Hello world!","timestamp":"2023-12-26 16:20:43"}
+{"level":"info","message":{"test":"Hello world!"},"timestamp":"2023-12-26 16:20:43"}
+{"level":"info","message":"Hello world!","timestamp":"2023-12-26 16:22:37"}
+{"level":"error","message":"Hello world!","timestamp":"2023-12-26 16:22:37"}
+{"level":"info","message":{"test":"Hello world!"},"timestamp":"2023-12-26 16:22:37"}
+{"level":"info","message":"Hello world!","timestamp":"2023-12-26 16:23:25"}
+{"level":"error","message":"Hello world!","timestamp":"2023-12-26 16:23:25"}
+{"level":"info","message":{"test":"Hello world!"},"timestamp":"2023-12-26 16:23:25"}
+{"level":"info","message":"Hello world!","timestamp":"2023-12-26 16:25:20"}
+{"level":"error","message":"Hello world!","timestamp":"2023-12-26 16:25:20"}
+{"level":"info","message":"test","test":"Hello world!","timestamp":"2023-12-26 16:25:20"}
+{"level":"info","message":"Hello world!","timestamp":"2023-12-26 16:25:39"}
+{"level":"error","message":"Hello world!","timestamp":"2023-12-26 16:25:39"}
+{"level":"info","message":"test","test":"Hello world!","timestamp":"2023-12-26 16:25:39"}
